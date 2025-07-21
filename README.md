@@ -1,6 +1,7 @@
 # FabrIQ
 FabrIQ is an AI-driven fashion intelligence platform that integrates virtual try-on, garment styling, and multimodal recommendation systems. The system leverages state-of-the-art deep learning models to offer personalized and visually accurate fashion experiences.
-![VITON-HD Example](https://ibb.co/cSPdWxYD)
+
+![VITON-HD Example](assets/UI.jpg)
 # Virtual Try-On (VTO)
 FabrIQ's virtual try-on module is based on the **VITON-HD architecture**. Research Paper - [(link)](https://arxiv.org/abs/2103.16874). Official PyTorch Implementation - [(link)](https://github.com/shadow2496/VITON-HD) It generates high-resolution, photorealistic images of a person wearing a selected garment, while preserving body shape, pose, and clothing texture.
 
