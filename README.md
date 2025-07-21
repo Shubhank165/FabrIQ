@@ -4,8 +4,10 @@ FabrIQ is an AI-driven fashion intelligence platform that integrates virtual try
 ![FabrIQ UI Example](assets/UI.jpg)
 # Virtual Try-On (VTO)
 FabrIQ's virtual try-on module is based on the **VITON-HD architecture**. Research Paper - [(link)](https://arxiv.org/abs/2103.16874). Official PyTorch Implementation - [(link)](https://github.com/shadow2496/VITON-HD) It generates high-resolution, photorealistic images of a person wearing a selected garment, while preserving body shape, pose, and clothing texture.
-![VTO Example](assets/Screenshot-2025-07-22-051650.png)
-Core Components
+
+![VTO Example](assets/vtoexample2.png)
+
+## Core Components
 Person-Cloth Synthesis: The system synthesizes realistic try-on images using person-specific information such as segmentation masks, pose estimation, and garment masks.
 
 Three-Stage Pipeline:
@@ -15,6 +17,8 @@ Three-Stage Pipeline:
 **Geometric Matching Module (GMM)**: Warps the garment to align with the target body shape and pose using thin-plate spline transformations.
 
 **ALIAS Generator**: Fuses the warped garment with person features to generate the final high-quality try-on output.
+
+![VTO Flow](assets/vtoexample.png)
 
 # Styling Module
 A suite of deep learning-based tools for garment customization and content transformation.
