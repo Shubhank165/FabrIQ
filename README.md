@@ -10,7 +10,7 @@ FabrIQ's virtual try-on module is based on the **VITON-HD architecture**. Resear
 ## Core Components
 Person-Cloth Synthesis: The system synthesizes realistic try-on images using person-specific information such as segmentation masks, pose estimation, and garment masks.
 
-Three-Stage Pipeline:
+### Three-Stage Pipeline:
 
 **1) Segmentation (Human Parsing)**: Extracts semantic segmentation maps to identify body parts and clothing regions
 
@@ -24,19 +24,19 @@ Three-Stage Pipeline:
 A suite of deep learning-based tools for garment customization and content transformation.
 
 ## Features
-**Neural Style Transfer**
+### **Neural Style Transfer**
 Applies the texture and visual characteristics of a reference image (style) to a target clothing image, allowing for unique stylized outputs.
 
 ![neural style architecture diagram](assets/neural-style-flowchart.jpg)
 
 ![neural style example](assets/neural-style.jpg)
 
-**Logo Imprint Generator**
+### **Logo Imprint Generator**
 Projects logos or graphical patterns onto garments using pixel-level blending and refinement models to ensure natural integration with folds and contours.
 
-![logo transfer example](assets/logo-transfer.jpg)
+![logo transfer example](assets/logo-imprint.png)
 
-**Cloth-to-Cloth Style Transfer**
+### **Cloth-to-Cloth Style Transfer**
 Transfers visual features such as color schemes, texture, and material appearance from one clothing item to another, while preserving garment shape and silhouette.
 
 ![cloth to cloth example](assets/cloth-to-cloth.jpg)
@@ -45,12 +45,13 @@ Transfers visual features such as color schemes, texture, and material appearanc
 A hybrid recommendation engine that combines visual-semantic embedding and graph-based user-item modeling to suggest relevant fashion items.
 
 ## Modules
-**Image-to-Image Recommendation**
+### **Image-to-Image Recommendation**
 Utilizes OpenCLIP to encode visual content into embeddings. Similarity is computed in the latent space to recommend visually related garments and accessories.
 
-**Text-to-Image Recommendation**
+### **Text-to-Image Recommendation**
 Natural language descriptions are embedded using CLIP’s text encoder and matched against the visual embeddings of fashion items, enabling semantic search and discovery.
 
-**Graph-Based Fashion Recommendation**
+### **Graph-Based Fashion Recommendation**
 Employs a Graph Neural Network (GNN) model built on user-item interaction data, item similarity graphs, and historical co-occurrence patterns to provide personalized and context-aware recommendations.
 
+![Recommender flowchart](assets/fabriq-recommender.jpg)
