@@ -27,11 +27,19 @@ A suite of deep learning-based tools for garment customization and content trans
 **Neural Style Transfer**
 Applies the texture and visual characteristics of a reference image (style) to a target clothing image, allowing for unique stylized outputs.
 
+![neural style architecture diagram](assets/neural-style-flowchart.jpg)
+
+![neural style example](assets/neural-style.jpg)
+
 **Logo Imprint Generator**
 Projects logos or graphical patterns onto garments using pixel-level blending and refinement models to ensure natural integration with folds and contours.
 
+![logo transfer example](assets/logo-transfer.jpg)
+
 **Cloth-to-Cloth Style Transfer**
 Transfers visual features such as color schemes, texture, and material appearance from one clothing item to another, while preserving garment shape and silhouette.
+
+![cloth to cloth example](assets/cloth-to-cloth.jpg)
 
 # Recommender System
 A hybrid recommendation engine that combines visual-semantic embedding and graph-based user-item modeling to suggest relevant fashion items.
